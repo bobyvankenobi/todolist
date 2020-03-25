@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //database connection to mongodb atlas -- if the database didnt exists, it will create it (in this case the "todolistDB in the link")
-mongoose.connect("mongodb+srv://jakab:jakab2020@cluster0-ul9ti.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://username:password@clusterName-ul9ti.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 const itemSchema = {
   name: String
